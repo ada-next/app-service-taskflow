@@ -1,8 +1,8 @@
 {
-  "name": "template-service-name",
+  "name": "app-service-taskflow",
   "protocol": "http:",
   "host": "localhost",
-  "port": "6102",
+  "port": "6103",
   "cloudHub": "http://localhost:6080",
   "username": "test",
   "password": "123456",

@@ -1,4 +1,4 @@
-const CloudApp = require("cloud-boot");
+const CloudApp = require("ada-cloud-boot");
 
 class Server extends CloudApp {
     getRemoteConfigInfo(service) {
@@ -6,7 +6,7 @@ class Server extends CloudApp {
             path: 'flow-db.json'
         }).then(a => {
             return {
-                db: a
+                db: JSON.parse(a).data
             };
         });;
     }

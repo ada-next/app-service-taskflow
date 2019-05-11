@@ -1,16 +1,16 @@
 {
-    "name": "app-flowengine",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {},
-    "author": "WangJinliang(hou80houzhu)",
-    "license": "MIT",
-    "dependencies": {
-        "ada-cloud-boot": "0.0.5",
-        "ada-util": "^1.0.0-beta.4",
-        "koa-router": "^7.4.0",
-        "mysql2": "^1.6.5"
-    },
-    "devDependencies": {}
+  "name": "app-service-taskflow",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "author": "WangJinliang(hou80houzhu)",
+  "license": "MIT",
+  "dependencies": {
+    "ada-cloud-boot": "0.0.8",
+    "ada-util": "^1.0.0-beta.4",
+    "koa-router": "^7.4.0",
+    "mysql2": "^1.6.5"
+  },
+  "devDependencies": {}
 }

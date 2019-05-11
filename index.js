@@ -1,4 +1,4 @@
-const Server = require("cloud-boot");
+const Server = require("./src/index");
 const router = require("./src/router");
 const mysql = require('mysql2');
 
