@@ -1,0 +1,10 @@
+{
+  "name": "template-service-name",
+  "protocol": "http:",
+  "host": "localhost",
+  "port": "6102",
+  "cloudHub": "http://localhost:6080",
+  "username": "test",
+  "password": "123456",
+  "configPath": ""
+}
