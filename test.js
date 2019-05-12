@@ -1,7 +1,3 @@
-const mongoose = require('mongoose');
-
-mongoose.connect('mongodb://192.168.3.46:27017/flowengine', { useNewUrlParser: true });
-
 // const Schema = mongoose.Schema;
 // const ObjectId = Schema.ObjectId;
 
@@ -30,10 +26,10 @@ mongoose.connect('mongodb://192.168.3.46:27017/flowengine', { useNewUrlParser: t
 //     map['test'].findOne().then(a => console.log(a));
 // });
 
-class Test {
-    static test = {
-        aa: "aa"
-    }
-};
+// class Test {
+//     static test = {
+//         aa: "aa"
+//     }
+// };
 
-console.log(Test.test);
+// console.log(Test.test);
