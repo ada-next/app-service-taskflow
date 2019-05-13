@@ -1,5 +1,5 @@
 const mysql = require('mysql2');
-const { Dao } = require("./../../helper/sql");
+const { Dao } = require("ada-cloud-util/boot");
 
 class MySqlDao extends Dao {
     constructor(option) {
@@ -23,7 +23,7 @@ class MySqlDao extends Dao {
         });
     }
 
-    updateConfig(config) {
+    updateDatabse(config) {
         this.pool.end(err => {
             this.pool = mysql.createPool(config);
         });
