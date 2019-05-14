@@ -1,12 +1,10 @@
-const { Controller } = require("ada-cloud-util/boot");
+const { Controller } = require("ada-cloud-util/boost");
 
 class TextController extends Controller {
-    static configure() {
-        return {
-            basePath: "",
-            actions: {
-                set: { path: "/set", method: 'get' }
-            }
+    static configure = {
+        basePath: "",
+        actions: {
+            set: { path: "/set", method: 'get' }
         }
     }
 
