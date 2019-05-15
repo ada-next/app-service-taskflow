@@ -11,7 +11,7 @@ class Server extends CloudApp {
         });
     }
 
-    getDatabaseConfigure() {
+    getDatabaseOption() {
         return this.config.db;
     }
 }

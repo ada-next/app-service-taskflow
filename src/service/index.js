@@ -1,18 +1,20 @@
 const { Service } = require("ada-cloud-util/boost");
+const TaskModel = require("./../model/index");
 
 class TestService extends Service {
     static configure = {
         name: "testService",
-        dao: 'mysql',
+        dao: {
+            dao: 'mysql'
+        },
         methods: {
             test: { transaction: false }
         }
     }
 
-    test() {
-        return this.connect.execute('select * from task').then(result => {
-            return result[0].map(a => a.id);
-        });
+    test(id) {
+        let task = new TaskModel({ id });
+        return this.dao.find(task);
     }
 }
 

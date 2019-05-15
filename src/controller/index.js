@@ -9,11 +9,7 @@ class TextController extends Controller {
     }
 
     set({ Service }) {
-        return Service.getService('testService').test().then(a => {
-            response.body = a;
-        }).catch(a => {
-            response.body = a;
-        });
+        return Service.getService('testService').test();
     }
 }
 
