@@ -4,9 +4,7 @@ const TaskModel = require("./../model/index");
 class TestService extends Service {
     static configure = {
         name: "testService",
-        dao: {
-            dao: 'mysql'
-        },
+        dao: 'mysql',
         methods: {
             test: { transaction: false }
         }

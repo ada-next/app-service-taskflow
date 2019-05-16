@@ -4,8 +4,9 @@ class TaskModel extends Model {
     static configure = {
         table: 'task',
         fields: {
-            name: "",
-            desc: ""
+            id: { prime: true },
+            name: { type: String },
+            desc: { type: String }
         }
     }
 }

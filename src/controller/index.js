@@ -5,11 +5,12 @@ class TextController extends Controller {
         basePath: "",
         actions: {
             set: { path: "/set", method: 'get' }
-        }
+        },
+        service: 'testService'
     }
 
-    set({ Service }) {
-        return Service.getService('testService').test();
+    set() {
+        return this.service.test();
     }
 }
 
